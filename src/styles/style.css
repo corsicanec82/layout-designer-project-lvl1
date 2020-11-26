@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;700&display=swap');
+@import url('./variables.css');
+@import url('./basic.css');
+@import url('./grid.css');
+@import url('./card.css');
+@import url('./manifest.css');
+@import url('./forms.css');
+@import url('./btn.css');
+@import url('./atomic.css');
+
+.bg-questions {
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+.bg-questions::before {
+  position: absolute;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: '';
+}
+
+.main-images {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+
+  z-index: 1;
+
+  height: 525px;
+}
+
+.video {
+  position: relative;
+  bottom: -200px;
+
+  margin-top: -200px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.separator {
+  width: 100%;
+  height: 20px;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}

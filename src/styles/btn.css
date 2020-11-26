@@ -1,0 +1,46 @@
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: var(--white);
+
+  background-color: var(--primary);
+}
+
+.btn-send {
+  width: 70px;
+  height: 50px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-icon {
+  position: relative;
+}
+
+.btn-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+
+  transform: translate(-50%, -50%);
+
+  content: '';
+}
+
+.icon-send::before {
+  width: 24px;
+  height: 24px;
+
+  background: url(../images/send.svg) no-repeat;
+}
